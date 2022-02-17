@@ -13,14 +13,12 @@ export default function Header() {
     <div className='header'>
        
         <div className="header__left">
-        <img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/>
-            
-
-            <div className="header__search">
-                 <SearchIcon />
+          <img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/>
+          <div className="header__search">
+             <SearchIcon />
                 
-                <input type="text" />
-            </div>
+             <input type="text" />
+          </div>
         </div>
         <div className="header__right">
         <HeaderOption Icon={HomeIcon} title='Home'/>
