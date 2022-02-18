@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../Feed.css';
+import Post from './Post';
 import CreateIcon from '@mui/icons-material/Create';
 import InputOption from '../InputOption.jsx';
 import ImageIcon from '@mui/icons-material/Image';
@@ -7,6 +8,9 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 export default function Feed() {
+
+  const [posts, setPosts] = useState([])
+
   return (
     <div className='feed'>
         <div className="feed__inputContainer">
@@ -24,6 +28,16 @@ export default function Feed() {
               <InputOption Icon={NewspaperIcon} title='Write article' Color="#FC9295" />  
             </div>
         </div>
+
+      {/* {Posts} */}
+
+            
+
+      <Post name='Sonny Sangha' description='This is a Test' message='Wow this works' />
+      <Post name='Shrey Lawang' description='Software Developer' message='This too' />
+      
+
+
     </div>
   )
 }
